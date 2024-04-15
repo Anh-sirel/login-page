@@ -1,0 +1,18 @@
+document.getElementById('login-form').addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const username = document.getElementById('username').value;
+  const password = document.getElementById('password').value;
+  const remember = document.getElementById('remember').checked;
+
+  // Here, you can add code to check the username and password
+  // with your server or database. If the username and password
+  // are valid, redirect the user to the home services page.
+
+  if (username && password) {
+    // Simulating a successful login by redirecting to the home services page
+    window.location.href = 'home_services.html';
+  } else {
+    alert('Invalid username or password');
+  }
+});
